@@ -1,3 +1,7 @@
+
+// x = w cosθ/(1-cosθ)
+
+
 public class DrivingController {	
 	
 
@@ -11,9 +15,6 @@ public class DrivingController {
 		public double accel;
 		public double brake;
 		public int backward;
-		public String toString() {
-			return steer+"/"+accel+"/"+brake+"/"+backward;
-		}
 	};
 	boolean ISBRAKE = false;
 	double BRAKE_SPEED = 0;
@@ -100,6 +101,7 @@ public class DrivingController {
 			} else {
 				fitPosition = -0.4*track_width;
 			}
+			
 			
 			// 1.1.2 reset corner
 			/*CORN_START = 0;
